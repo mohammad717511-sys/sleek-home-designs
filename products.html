@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Sleek Home Designs and Renovations</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 16px 20px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-wrap {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #111827;
+    }
+
+    .nav-links a {
+      color: #111827;
+      margin-left: 16px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      border: 1px solid #e5e7eb;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h3 {
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 0.85rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    .cta-box {
+      margin-top: 40px;
+      background: linear-gradient(135deg, #1f2937, #111827);
+      color: white;
+      padding: 30px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 16px;
+      background: #f59e0b;
+      color: #111827;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrap">
+      <div class="brand">Sleek Home Designs and Renovations</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Our Products</h1>
+    <p>
+      Browse our selection of building materials and renovation products for residential
+      and commercial projects.
+    </p>
+  </header>
+
+  <div class="container">
+    <div class="section-title">
+      <h2>Building Materials & Supplies</h2>
+      <p>Add your own product images in the <strong>images</strong> folder and update the names anytime.</p>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="images/cement.jpg" alt="Cement">
+        <div class="product-info">
+          <span class="tag">Core Materials</span>
+          <h3>Cement</h3>
+          <p>Strong and reliable cement for durable construction and foundation work.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/blocks.jpg" alt="Blocks">
+        <div class="product-info">
+          <span class="tag">Construction</span>
+          <h3>Blocks</h3>
+          <p>Quality building blocks for walls, structure work, and long-lasting projects.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/tiles.jpg" alt="Tiles">
+        <div class="product-info">
+          <span class="tag">Finishing</span>
+          <h3>Tiles</h3>
+          <p>Stylish and durable tiles for floors, kitchens, bathrooms, and interior spaces.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/paint.jpg" alt="Paint">
+        <div class="product-info">
+          <span class="tag">Finishing</span>
+          <h3>Paint</h3>
+          <p>Interior and exterior paint products for modern and attractive finishes.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/roofing.jpg" alt="Roofing materials">
+        <div class="product-info">
+          <span class="tag">Roofing</span>
+          <h3>Roofing Materials</h3>
+          <p>Dependable roofing options designed for protection, durability, and style.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/plumbing.jpg" alt="Plumbing supplies">
+        <div class="product-info">
+          <span class="tag">Supplies</span>
+          <h3>Plumbing Supplies</h3>
+          <p>Essential plumbing materials and fittings for residential and commercial use.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/doors.jpg" alt="Doors and frames">
+        <div class="product-info">
+          <span class="tag">Fixtures</span>
+          <h3>Doors & Frames</h3>
+          <p>Durable and modern door solutions for homes, offices, and renovation projects.</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/fittings.jpg" alt="Fittings">
+        <div class="product-info">
+          <span class="tag">Interior</span>
+          <h3>Fittings</h3>
+          <p>Interior fittings and finishing accessories that improve functionality and design.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <h2>Need Help Choosing Materials?</h2>
+      <p>Email us for product questions, pricing, or renovation support.</p>
+      <a class="btn" href="mailto:sleekhomereno@gmail.com">sleekhomereno@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Sleek Home Designs and Renovations. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
